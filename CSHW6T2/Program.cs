@@ -10,6 +10,7 @@ namespace CSHW6T2
     {
         static void Main(string[] args)
         {
+
             int start = 1;
             int end = 100;
             int nums;
@@ -35,7 +36,10 @@ namespace CSHW6T2
         }
 
 
-        static int ReadNumber(int start, int end)
+        #region Write a method ReadNumber(int start, int end), that reads from Console (or from file) integer number and return it, if it is in the range [start...end]. 
+
+
+        static public int ReadNumber(int start, int end)
         {
             int number = int.Parse(Console.ReadLine());
 
@@ -43,5 +47,6 @@ namespace CSHW6T2
 
             return number;
         }
+        #endregion
     }
 }
